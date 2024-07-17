@@ -6,5 +6,49 @@
         <title>Dashboard</title>
         <link rel="stylesheet" href="./public/css/styles.css" />
     </head>
-    <body></body>
+    <body>
+        <header>
+            <div>
+                <h1>Social Media Dashboard</h1>
+                <h3>Total Followers: 23,004</h3>
+            </div>
+            <hr />
+            <div>
+                <p>Dark Mode</p>
+                <label
+                    class="relative inline-block h-8 w-14 cursor-pointer rounded-full bg-neutralLightTheme-dark-grayish-blue-text transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-gray-900"
+                >
+                    <input
+                        id="inputDarkMode"
+                        class="peer sr-only"
+                        id="AcceptConditions"
+                        type="checkbox"
+                    />
+                    <span
+                        class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-gray-300 ring-[6px] ring-inset ring-white transition-all peer-checked:start-8 peer-checked:w-2 peer-checked:bg-white peer-checked:ring-transparent"
+                    ></span>
+                </label>
+            </div>
+        </header>
+        <main>
+            <div>
+                <div>
+                    <img src="./public/assets/images/icon-facebook.svg" alt="Facebook">
+                    <p>@nathanf</p>
+                </div>
+                <div>
+                    <p>1987</p>
+                    <p>Followers</p>
+                </div>
+                <p>+ 12 Today</p>
+            </div>
+        </main>
+        <script>
+            document
+                .getElementById("inputDarkMode")
+                .addEventListener("click", () => {
+                    document.documentElement.classList.toggle("dark");
+                });
+        </script>
+    </body>
 </html>
