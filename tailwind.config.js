@@ -33,7 +33,11 @@ module.exports = {
                 "very-dark-blue-text": "hsl(230, 17%, 14%)",
             },
         },
-        extend: {},
+        extend: {
+            fontFamily: {
+                Inter: ["Inter", "sans-serif"],
+            },
+        },
     },
     plugins: [],
 };
