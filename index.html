@@ -4,19 +4,21 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Dashboard</title>
+        <link rel="shortcut icon" href="./public/assets/images/favicon-32x32.png" type="image/x-icon">
         <link rel="stylesheet" href="./public/css/styles.css" />
+        <link rel="stylesheet" href="./public/css/extra.css">
     </head>
     <body>
-        <header>
-            <div>
-                <h1>Social Media Dashboard</h1>
-                <h3>Total Followers: 23,004</h3>
+        <header class="min-h-72 bg-neutralLightTheme-very-pale-blue-top-bg-pattern p-8 rounded-b-3xl">
+            <div class="mb-5">
+                <h1 class="text-2xl font-bold">Social Media Dashboard</h1>
+                <h3 class="text-neutralLightTheme-dark-grayish-blue-text font-bold">Total Followers: 23,004</h3>
             </div>
             <hr />
-            <div>
-                <p>Dark Mode</p>
+            <div class="flex justify-between items-center mt-4">
+                <p class="text-neutralLightTheme-dark-grayish-blue-text font-bold">Dark Mode</p>
                 <label
-                    class="relative inline-block h-8 w-14 cursor-pointer rounded-full bg-neutralLightTheme-dark-grayish-blue-text transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-gray-900"
+                    class="relative inline-block h-8 w-14 cursor-pointer rounded-full bg-neutralLightTheme-white-bg border-neutralLightTheme-dark-grayish-blue-text border transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-gray-900"
                 >
                     <input
                         id="inputDarkMode"
@@ -30,17 +32,54 @@
                 </label>
             </div>
         </header>
-        <main>
-            <div>
-                <div>
+        <main class="relative -top-28 p-8 grid grid-cols-1 gap-5">
+            <div class="relative bg-neutralLightTheme-light-grayish-blue-card-bg rounded-md flex flex-col items-center gap-5 p-6">
+                <div class="absolute top-0 bg-primary-facebook w-full h-2 rounded-t-md"></div>
+                <div class="flex gap-2">
                     <img src="./public/assets/images/icon-facebook.svg" alt="Facebook">
-                    <p>@nathanf</p>
+                    <p class="text-neutralLightTheme-dark-grayish-blue-text text-sm font-bold">@nathanf</p>
                 </div>
-                <div>
-                    <p>1987</p>
-                    <p>Followers</p>
+                <div class="text-center">
+                    <p class="text-6xl font-bold">1,987</p>
+                    <p class="text-neutralLightTheme-dark-grayish-blue-text uppercase tracking-[0.3rem]">Followers</p>
                 </div>
-                <p>+ 12 Today</p>
+                <p class="text-primary-lime-green font-bold">+ 12 Today</p>
+            </div>
+            <div class="relative bg-neutralLightTheme-light-grayish-blue-card-bg rounded-md flex flex-col items-center gap-5 p-6">
+                <div class="absolute top-0 bg-primary-twitter w-full h-2 rounded-t-md"></div>
+                <div class="flex gap-2">
+                    <img src="./public/assets/images/icon-twitter.svg" alt="Twitter">
+                    <p class="text-neutralLightTheme-dark-grayish-blue-text text-sm font-bold">@nathanf</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-6xl font-bold">1,044</p>
+                    <p class="text-neutralLightTheme-dark-grayish-blue-text uppercase tracking-[0.3rem]">Followers</p>
+                </div>
+                <p class="text-primary-lime-green font-bold">+ 99 Today</p>
+            </div>
+            <div class="relative bg-neutralLightTheme-light-grayish-blue-card-bg rounded-md flex flex-col items-center gap-5 p-6">
+                <div class="absolute top-0 bg-instagram w-full h-2 rounded-t-md"></div>
+                <div class="flex gap-2">
+                    <img src="./public/assets/images/icon-instagram.svg" alt="Instagram">
+                    <p class="text-neutralLightTheme-dark-grayish-blue-text text-sm font-bold">@nathanf</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-6xl font-bold">11k</p>
+                    <p class="text-neutralLightTheme-dark-grayish-blue-text uppercase tracking-[0.3rem]">Followers</p>
+                </div>
+                <p class="text-primary-lime-green font-bold">+ 1099 Today</p>
+            </div>
+            <div class="relative bg-neutralLightTheme-light-grayish-blue-card-bg rounded-md flex flex-col items-center gap-5 p-6">
+                <div class="absolute top-0 bg-primary-youtube w-full h-2 rounded-t-md"></div>
+                <div class="flex gap-2">
+                    <img src="./public/assets/images/icon-youtube.svg" alt="Youtube">
+                    <p class="text-neutralLightTheme-dark-grayish-blue-text text-sm font-bold">Nathan F.</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-6xl font-bold">8,239</p>
+                    <p class="text-neutralLightTheme-dark-grayish-blue-text uppercase tracking-[0.3rem]">Subscribers</p>
+                </div>
+                <p class="text-primary-bright-red font-bold">- 144 Today</p>
             </div>
         </main>
         <script>
