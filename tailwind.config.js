@@ -42,6 +42,10 @@ module.exports = {
                 "toggle-gradient":
                     "linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%))",
             },
+            screens: {
+                tablet: "725px",
+                desktop: "1175px",
+            },
         },
     },
     plugins: [],

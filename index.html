@@ -10,13 +10,13 @@
     </head>
     <body>
         <div class="dark:bg-neutralDarkTheme-very-dark-blue-bg">
-            <header class="min-h-72 bg-neutralLightTheme-very-pale-blue-top-bg-pattern p-8 rounded-b-3xl dark:bg-neutralDarkTheme-very-dark-blue-top-bg-pattern">
+            <header class="min-h-72 bg-neutralLightTheme-very-pale-blue-top-bg-pattern p-8 rounded-b-3xl dark:bg-neutralDarkTheme-very-dark-blue-top-bg-pattern tablet:flex tablet:justify-between tablet:items-start">
                 <div class="mb-5">
                     <h1 class="text-2xl font-bold dark:text-neutralDarkTheme-white-text">Social Media Dashboard</h1>
                     <h3 class="text-neutralLightTheme-dark-grayish-blue-text font-bold dark:text-neutralDarkTheme-desaturated-blue-text">Total Followers: 23,004</h3>
                 </div>
-                <hr class="border-t-neutralLightTheme-dark-grayish-blue-text"/>
-                <div class="flex justify-between items-center mt-4">
+                <hr class="border-t-neutralLightTheme-dark-grayish-blue-text tablet:hidden"/>
+                <div class="flex justify-between items-center mt-4 tablet:gap-3">
                     <p class="text-neutralLightTheme-dark-grayish-blue-text font-bold dark:text-neutralDarkTheme-desaturated-blue-text">Dark Mode</p>
                     <label
                         class="label-dark-mode relative inline-block h-8 w-14 cursor-pointer rounded-full border-neutralLightTheme-dark-grayish-blue-text border"
@@ -33,8 +33,8 @@
                     </label>
                 </div>
             </header>
-            <main class="relative -top-28 p-8">
-                <section class="grid grid-cols-1 gap-5">
+            <main class="relative -top-28 p-8 desktop:-top-36">
+                <section class="grid grid-cols-1 gap-5 desktop:grid-cols-4">
                     <h2 class="hidden">Stats</h2>
                     <div class="relative bg-neutralLightTheme-light-grayish-blue-card-bg rounded-md flex flex-col items-center justify-center gap-5 p-6 dark:bg-neutralDarkTheme-dark-desaturated-blue-card-bg">
                         <div class="absolute top-0 bg-primary-facebook w-full h-2 rounded-t-md"></div>
@@ -87,7 +87,7 @@
                 </section>
                 <section class="mt-14">
                     <h2 class="text-2xl text-neutralLightTheme-dark-grayish-blue-text dark:text-neutralDarkTheme-white-text font-bold mb-8">Overview - Today</h2>
-                    <div class="grid grid-cols-1 gap-5">
+                    <div class="grid grid-cols-1 gap-5 tablet:grid-cols-2 desktop:grid-cols-4">
                         <div class="flex flex-col gap-5 bg-neutralLightTheme-light-grayish-blue-card-bg dark:bg-neutralDarkTheme-dark-desaturated-blue-card-bg py-6 px-8 rounded-md">
                             <div class="flex justify-between">
                                 <p class="text-neutralLightTheme-dark-grayish-blue-text dark:text-neutralDarkTheme-desaturated-blue-text font-bold">Page Views</p>
