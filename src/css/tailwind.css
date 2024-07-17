@@ -21,3 +21,9 @@
         @apply font-Inter;
     }
 }
+
+@layer components {
+    .label-dark-mode:has(input[type="checkbox"]:checked) {
+        @apply bg-toggle-gradient border-none;
+    }
+}

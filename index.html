@@ -9,79 +9,169 @@
         <link rel="stylesheet" href="./public/css/extra.css">
     </head>
     <body>
-        <header class="min-h-72 bg-neutralLightTheme-very-pale-blue-top-bg-pattern p-8 rounded-b-3xl">
-            <div class="mb-5">
-                <h1 class="text-2xl font-bold">Social Media Dashboard</h1>
-                <h3 class="text-neutralLightTheme-dark-grayish-blue-text font-bold">Total Followers: 23,004</h3>
-            </div>
-            <hr />
-            <div class="flex justify-between items-center mt-4">
-                <p class="text-neutralLightTheme-dark-grayish-blue-text font-bold">Dark Mode</p>
-                <label
-                    class="relative inline-block h-8 w-14 cursor-pointer rounded-full bg-neutralLightTheme-white-bg border-neutralLightTheme-dark-grayish-blue-text border transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-gray-900"
-                >
-                    <input
-                        id="inputDarkMode"
-                        class="peer sr-only"
-                        id="AcceptConditions"
-                        type="checkbox"
-                    />
-                    <span
-                        class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-gray-300 ring-[6px] ring-inset ring-white transition-all peer-checked:start-8 peer-checked:w-2 peer-checked:bg-white peer-checked:ring-transparent"
-                    ></span>
-                </label>
-            </div>
-        </header>
-        <main class="relative -top-28 p-8 grid grid-cols-1 gap-5">
-            <div class="relative bg-neutralLightTheme-light-grayish-blue-card-bg rounded-md flex flex-col items-center gap-5 p-6">
-                <div class="absolute top-0 bg-primary-facebook w-full h-2 rounded-t-md"></div>
-                <div class="flex gap-2">
-                    <img src="./public/assets/images/icon-facebook.svg" alt="Facebook">
-                    <p class="text-neutralLightTheme-dark-grayish-blue-text text-sm font-bold">@nathanf</p>
+        <div class="dark:bg-neutralDarkTheme-very-dark-blue-bg">
+            <header class="min-h-72 bg-neutralLightTheme-very-pale-blue-top-bg-pattern p-8 rounded-b-3xl dark:bg-neutralDarkTheme-very-dark-blue-top-bg-pattern">
+                <div class="mb-5">
+                    <h1 class="text-2xl font-bold dark:text-neutralDarkTheme-white-text">Social Media Dashboard</h1>
+                    <h3 class="text-neutralLightTheme-dark-grayish-blue-text font-bold dark:text-neutralDarkTheme-desaturated-blue-text">Total Followers: 23,004</h3>
                 </div>
-                <div class="text-center">
-                    <p class="text-6xl font-bold">1,987</p>
-                    <p class="text-neutralLightTheme-dark-grayish-blue-text uppercase tracking-[0.3rem]">Followers</p>
+                <hr class="border-t-neutralLightTheme-dark-grayish-blue-text"/>
+                <div class="flex justify-between items-center mt-4">
+                    <p class="text-neutralLightTheme-dark-grayish-blue-text font-bold dark:text-neutralDarkTheme-desaturated-blue-text">Dark Mode</p>
+                    <label
+                        class="label-dark-mode relative inline-block h-8 w-14 cursor-pointer rounded-full border-neutralLightTheme-dark-grayish-blue-text border"
+                    >
+                        <input
+                            id="inputDarkMode"
+                            class="peer sr-only"
+                            id="AcceptConditions"
+                            type="checkbox"
+                        />
+                        <span
+                            class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-gray-300 ring-[6px] ring-inset ring-white transition-all peer-checked:start-8 peer-checked:w-2 peer-checked:bg-neutralDarkTheme-very-dark-blue-top-bg-pattern peer-checked:ring-transparent"
+                        ></span>
+                    </label>
                 </div>
-                <p class="text-primary-lime-green font-bold">+ 12 Today</p>
-            </div>
-            <div class="relative bg-neutralLightTheme-light-grayish-blue-card-bg rounded-md flex flex-col items-center gap-5 p-6">
-                <div class="absolute top-0 bg-primary-twitter w-full h-2 rounded-t-md"></div>
-                <div class="flex gap-2">
-                    <img src="./public/assets/images/icon-twitter.svg" alt="Twitter">
-                    <p class="text-neutralLightTheme-dark-grayish-blue-text text-sm font-bold">@nathanf</p>
-                </div>
-                <div class="text-center">
-                    <p class="text-6xl font-bold">1,044</p>
-                    <p class="text-neutralLightTheme-dark-grayish-blue-text uppercase tracking-[0.3rem]">Followers</p>
-                </div>
-                <p class="text-primary-lime-green font-bold">+ 99 Today</p>
-            </div>
-            <div class="relative bg-neutralLightTheme-light-grayish-blue-card-bg rounded-md flex flex-col items-center gap-5 p-6">
-                <div class="absolute top-0 bg-instagram w-full h-2 rounded-t-md"></div>
-                <div class="flex gap-2">
-                    <img src="./public/assets/images/icon-instagram.svg" alt="Instagram">
-                    <p class="text-neutralLightTheme-dark-grayish-blue-text text-sm font-bold">@nathanf</p>
-                </div>
-                <div class="text-center">
-                    <p class="text-6xl font-bold">11k</p>
-                    <p class="text-neutralLightTheme-dark-grayish-blue-text uppercase tracking-[0.3rem]">Followers</p>
-                </div>
-                <p class="text-primary-lime-green font-bold">+ 1099 Today</p>
-            </div>
-            <div class="relative bg-neutralLightTheme-light-grayish-blue-card-bg rounded-md flex flex-col items-center gap-5 p-6">
-                <div class="absolute top-0 bg-primary-youtube w-full h-2 rounded-t-md"></div>
-                <div class="flex gap-2">
-                    <img src="./public/assets/images/icon-youtube.svg" alt="Youtube">
-                    <p class="text-neutralLightTheme-dark-grayish-blue-text text-sm font-bold">Nathan F.</p>
-                </div>
-                <div class="text-center">
-                    <p class="text-6xl font-bold">8,239</p>
-                    <p class="text-neutralLightTheme-dark-grayish-blue-text uppercase tracking-[0.3rem]">Subscribers</p>
-                </div>
-                <p class="text-primary-bright-red font-bold">- 144 Today</p>
-            </div>
-        </main>
+            </header>
+            <main class="relative -top-28 p-8">
+                <section class="grid grid-cols-1 gap-5">
+                    <h2 class="hidden">Stats</h2>
+                    <div class="relative bg-neutralLightTheme-light-grayish-blue-card-bg rounded-md flex flex-col items-center justify-center gap-5 p-6 dark:bg-neutralDarkTheme-dark-desaturated-blue-card-bg">
+                        <div class="absolute top-0 bg-primary-facebook w-full h-2 rounded-t-md"></div>
+                        <div class="flex gap-2">
+                            <img src="./public/assets/images/icon-facebook.svg" alt="Facebook">
+                            <p class="text-neutralLightTheme-dark-grayish-blue-text text-sm font-bold dark:text-neutralDarkTheme-desaturated-blue-text">@nathanf</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-6xl font-bold dark:text-neutralDarkTheme-white-text">1,987</p>
+                            <p class="text-neutralLightTheme-dark-grayish-blue-text uppercase tracking-[0.3rem] dark:text-neutralDarkTheme-desaturated-blue-text">Followers</p>
+                        </div>
+                        <p class="text-primary-lime-green font-bold">+ 12 Today</p>
+                    </div>
+                    <div class="relative bg-neutralLightTheme-light-grayish-blue-card-bg rounded-md flex flex-col items-center justify-center gap-5 p-6 dark:bg-neutralDarkTheme-dark-desaturated-blue-card-bg">
+                        <div class="absolute top-0 bg-primary-twitter w-full h-2 rounded-t-md"></div>
+                        <div class="flex gap-2">
+                            <img src="./public/assets/images/icon-twitter.svg" alt="Twitter">
+                            <p class="text-neutralLightTheme-dark-grayish-blue-text text-sm font-bold dark:text-neutralDarkTheme-desaturated-blue-text">@nathanf</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-6xl font-bold dark:text-neutralDarkTheme-white-text">1,044</p>
+                            <p class="text-neutralLightTheme-dark-grayish-blue-text uppercase tracking-[0.3rem] dark:text-neutralDarkTheme-desaturated-blue-text">Followers</p>
+                        </div>
+                        <p class="text-primary-lime-green font-bold">+ 99 Today</p>
+                    </div>
+                    <div class="relative bg-neutralLightTheme-light-grayish-blue-card-bg rounded-md flex flex-col items-center justify-center gap-5 p-6 dark:bg-neutralDarkTheme-dark-desaturated-blue-card-bg">
+                        <div class="absolute top-0 bg-instagram w-full h-2 rounded-t-md"></div>
+                        <div class="flex gap-2">
+                            <img src="./public/assets/images/icon-instagram.svg" alt="Instagram">
+                            <p class="text-neutralLightTheme-dark-grayish-blue-text text-sm font-bold dark:text-neutralDarkTheme-desaturated-blue-text">@nathanf</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-6xl font-bold dark:text-neutralDarkTheme-white-text">11k</p>
+                            <p class="text-neutralLightTheme-dark-grayish-blue-text uppercase tracking-[0.3rem] dark:text-neutralDarkTheme-desaturated-blue-text">Followers</p>
+                        </div>
+                        <p class="text-primary-lime-green font-bold">+ 1099 Today</p>
+                    </div>
+                    <div class="relative bg-neutralLightTheme-light-grayish-blue-card-bg rounded-md flex flex-col items-center justify-center gap-5 p-6 dark:bg-neutralDarkTheme-dark-desaturated-blue-card-bg">
+                        <div class="absolute top-0 bg-primary-youtube w-full h-2 rounded-t-md"></div>
+                        <div class="flex gap-2">
+                            <img src="./public/assets/images/icon-youtube.svg" alt="Youtube">
+                            <p class="text-neutralLightTheme-dark-grayish-blue-text text-sm font-bold dark:text-neutralDarkTheme-desaturated-blue-text">Nathan F.</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-6xl font-bold dark:text-neutralDarkTheme-white-text">8,239</p>
+                            <p class="text-neutralLightTheme-dark-grayish-blue-text uppercase tracking-[0.3rem] dark:text-neutralDarkTheme-desaturated-blue-text">Subscribers</p>
+                        </div>
+                        <p class="text-primary-bright-red font-bold">- 144 Today</p>
+                    </div>
+                </section>
+                <section class="mt-14">
+                    <h2 class="text-2xl text-neutralLightTheme-dark-grayish-blue-text dark:text-neutralDarkTheme-white-text font-bold mb-8">Overview - Today</h2>
+                    <div class="grid grid-cols-1 gap-5">
+                        <div class="flex flex-col gap-5 bg-neutralLightTheme-light-grayish-blue-card-bg dark:bg-neutralDarkTheme-dark-desaturated-blue-card-bg py-6 px-8 rounded-md">
+                            <div class="flex justify-between">
+                                <p class="text-neutralLightTheme-dark-grayish-blue-text dark:text-neutralDarkTheme-desaturated-blue-text font-bold">Page Views</p>
+                                <img src="./public/assets/images/icon-facebook.svg" alt="Facebook">
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <p class="text-3xl font-bold dark:text-neutralDarkTheme-white-text">87</p>
+                                <p class="text-primary-lime-green font-bold">+ 3%</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-5 bg-neutralLightTheme-light-grayish-blue-card-bg dark:bg-neutralDarkTheme-dark-desaturated-blue-card-bg py-6 px-8 rounded-md">
+                            <div class="flex justify-between">
+                                <p class="text-neutralLightTheme-dark-grayish-blue-text dark:text-neutralDarkTheme-desaturated-blue-text font-bold">Likes</p>
+                                <img src="./public/assets/images/icon-facebook.svg" alt="Facebook">
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <p class="text-3xl font-bold dark:text-neutralDarkTheme-white-text">87</p>
+                                <p class="text-primary-bright-red font-bold">- 2%</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-5 bg-neutralLightTheme-light-grayish-blue-card-bg dark:bg-neutralDarkTheme-dark-desaturated-blue-card-bg py-6 px-8 rounded-md">
+                            <div class="flex justify-between">
+                                <p class="text-neutralLightTheme-dark-grayish-blue-text dark:text-neutralDarkTheme-desaturated-blue-text font-bold">Likes</p>
+                                <img src="./public/assets/images/icon-instagram.svg" alt="Instagram">
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <p class="text-3xl font-bold dark:text-neutralDarkTheme-white-text">5462</p>
+                                <p class="text-primary-lime-green font-bold">+ 2257%</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-5 bg-neutralLightTheme-light-grayish-blue-card-bg dark:bg-neutralDarkTheme-dark-desaturated-blue-card-bg py-6 px-8 rounded-md">
+                            <div class="flex justify-between">
+                                <p class="text-neutralLightTheme-dark-grayish-blue-text dark:text-neutralDarkTheme-desaturated-blue-text font-bold">profile Views</p>
+                                <img src="./public/assets/images/icon-instagram.svg" alt="Instagram">
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <p class="text-3xl font-bold dark:text-neutralDarkTheme-white-text">52k</p>
+                                <p class="text-primary-lime-green font-bold">+ 1375%</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-5 bg-neutralLightTheme-light-grayish-blue-card-bg dark:bg-neutralDarkTheme-dark-desaturated-blue-card-bg py-6 px-8 rounded-md">
+                            <div class="flex justify-between">
+                                <p class="text-neutralLightTheme-dark-grayish-blue-text dark:text-neutralDarkTheme-desaturated-blue-text font-bold">Retweets</p>
+                                <img src="./public/assets/images/icon-twitter.svg" alt="Twitter">
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <p class="text-3xl font-bold dark:text-neutralDarkTheme-white-text">117</p>
+                                <p class="text-primary-lime-green font-bold">+ 303%</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-5 bg-neutralLightTheme-light-grayish-blue-card-bg dark:bg-neutralDarkTheme-dark-desaturated-blue-card-bg py-6 px-8 rounded-md">
+                            <div class="flex justify-between">
+                                <p class="text-neutralLightTheme-dark-grayish-blue-text dark:text-neutralDarkTheme-desaturated-blue-text font-bold">Likes</p>
+                                <img src="./public/assets/images/icon-twitter.svg" alt="Twitter">
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <p class="text-3xl font-bold dark:text-neutralDarkTheme-white-text">507</p>
+                                <p class="text-primary-lime-green font-bold">+ 553%</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-5 bg-neutralLightTheme-light-grayish-blue-card-bg dark:bg-neutralDarkTheme-dark-desaturated-blue-card-bg py-6 px-8 rounded-md">
+                            <div class="flex justify-between">
+                                <p class="text-neutralLightTheme-dark-grayish-blue-text dark:text-neutralDarkTheme-desaturated-blue-text font-bold">Likes</p>
+                                <img src="./public/assets/images/icon-youtube.svg" alt="Youtube">
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <p class="text-3xl font-bold dark:text-neutralDarkTheme-white-text">107</p>
+                                <p class="text-primary-bright-red font-bold">- 19%</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-5 bg-neutralLightTheme-light-grayish-blue-card-bg dark:bg-neutralDarkTheme-dark-desaturated-blue-card-bg py-6 px-8 rounded-md">
+                            <div class="flex justify-between">
+                                <p class="text-neutralLightTheme-dark-grayish-blue-text dark:text-neutralDarkTheme-desaturated-blue-text font-bold">Total Views</p>
+                                <img src="./public/assets/images/icon-youtube.svg" alt="Youtube">
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <p class="text-3xl font-bold dark:text-neutralDarkTheme-white-text">1407</p>
+                                <p class="text-primary-bright-red font-bold">- 12%</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
         <script>
             document
                 .getElementById("inputDarkMode")

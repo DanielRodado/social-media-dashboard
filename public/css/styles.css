@@ -558,6 +558,11 @@ body {
   --tw-contain-style:  ;
 }
 
+.label-dark-mode:has(input[type="checkbox"]:checked) {
+  border-style: none;
+  background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -583,44 +588,16 @@ body {
   bottom: 0px;
 }
 
+.-top-28 {
+  top: -7rem;
+}
+
 .start-0 {
   inset-inline-start: 0px;
 }
 
 .top-0 {
   top: 0px;
-}
-
-.-top-8 {
-  top: -2rem;
-}
-
-.top-2 {
-  top: 0.5rem;
-}
-
-.-top-2 {
-  top: -0.5rem;
-}
-
-.-top-1 {
-  top: -0.25rem;
-}
-
-.-top-10 {
-  top: -2.5rem;
-}
-
-.-top-40 {
-  top: -10rem;
-}
-
-.-top-32 {
-  top: -8rem;
-}
-
-.-top-28 {
-  top: -7rem;
 }
 
 .m-1 {
@@ -633,6 +610,18 @@ body {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
 .mb-8 {
@@ -651,6 +640,10 @@ body {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .size-6 {
   width: 1.5rem;
   height: 1.5rem;
@@ -664,24 +657,12 @@ body {
   height: 2rem;
 }
 
+.h-dvh {
+  height: 100dvh;
+}
+
 .h-1 {
   height: 0.25rem;
-}
-
-.min-h-16 {
-  min-height: 4rem;
-}
-
-.min-h-40 {
-  min-height: 10rem;
-}
-
-.min-h-96 {
-  min-height: 24rem;
-}
-
-.min-h-64 {
-  min-height: 16rem;
 }
 
 .min-h-72 {
@@ -712,6 +693,10 @@ body {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -724,8 +709,12 @@ body {
   gap: 1.25rem;
 }
 
-.overflow-hidden {
-  overflow: hidden;
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .rounded-full {
@@ -741,11 +730,6 @@ body {
   border-bottom-left-radius: 1.5rem;
 }
 
-.rounded-b-md {
-  border-bottom-right-radius: 0.375rem;
-  border-bottom-left-radius: 0.375rem;
-}
-
 .rounded-t-md {
   border-top-left-radius: 0.375rem;
   border-top-right-radius: 0.375rem;
@@ -755,23 +739,14 @@ body {
   border-width: 1px;
 }
 
-.border-t-4 {
-  border-top-width: 4px;
-}
-
 .border-neutralLightTheme-dark-grayish-blue-text {
   --tw-border-opacity: 1;
   border-color: hsl(228 12% 44% / var(--tw-border-opacity));
 }
 
-.border-t-primary-facebook {
+.border-t-neutralLightTheme-dark-grayish-blue-text {
   --tw-border-opacity: 1;
-  border-top-color: hsl(208 92% 53% / var(--tw-border-opacity));
-}
-
-.border-t-primary-twitter {
-  --tw-border-opacity: 1;
-  border-top-color: hsl(203 89% 53% / var(--tw-border-opacity));
+  border-top-color: hsl(228 12% 44% / var(--tw-border-opacity));
 }
 
 .bg-neutralLightTheme-light-grayish-blue-card-bg {
@@ -784,9 +759,9 @@ body {
   background-color: hsl(225 100% 98% / var(--tw-bg-opacity));
 }
 
-.bg-neutralLightTheme-white-bg {
+.bg-primary-facebook {
   --tw-bg-opacity: 1;
-  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+  background-color: hsl(208 92% 53% / var(--tw-bg-opacity));
 }
 
 .bg-primary-twitter {
@@ -794,14 +769,14 @@ body {
   background-color: hsl(203 89% 53% / var(--tw-bg-opacity));
 }
 
-.bg-primary-facebook {
-  --tw-bg-opacity: 1;
-  background-color: hsl(208 92% 53% / var(--tw-bg-opacity));
-}
-
 .bg-primary-youtube {
   --tw-bg-opacity: 1;
   background-color: hsl(348 97% 39% / var(--tw-bg-opacity));
+}
+
+.bg-neutralLightTheme-dark-grayish-blue-text {
+  --tw-bg-opacity: 1;
+  background-color: hsl(228 12% 44% / var(--tw-bg-opacity));
 }
 
 .bg-instagram {
@@ -814,6 +789,30 @@ body {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .text-center {
@@ -835,6 +834,16 @@ body {
   line-height: 1.25rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -852,14 +861,14 @@ body {
   color: hsl(228 12% 44% / var(--tw-text-opacity));
 }
 
-.text-primary-lime-green {
-  --tw-text-opacity: 1;
-  color: hsl(163 72% 41% / var(--tw-text-opacity));
-}
-
 .text-primary-bright-red {
   --tw-text-opacity: 1;
   color: hsl(356 69% 56% / var(--tw-text-opacity));
+}
+
+.text-primary-lime-green {
+  --tw-text-opacity: 1;
+  color: hsl(163 72% 41% / var(--tw-text-opacity));
 }
 
 .ring-\[6px\] {
@@ -872,22 +881,10 @@ body {
   --tw-ring-inset: inset;
 }
 
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.\[-webkit-tap-highlight-color\:_transparent\] {
-  -webkit-tap-highlight-color: transparent;
 }
 
 @font-face {
@@ -916,4 +913,34 @@ body {
 
 .peer:checked ~ .peer-checked\:w-2 {
   width: 0.5rem;
+}
+
+.peer:checked ~ .peer-checked\:bg-neutralDarkTheme-very-dark-blue-top-bg-pattern {
+  --tw-bg-opacity: 1;
+  background-color: hsl(232 19% 15% / var(--tw-bg-opacity));
+}
+
+.dark\:bg-neutralDarkTheme-very-dark-blue-top-bg-pattern:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: hsl(232 19% 15% / var(--tw-bg-opacity));
+}
+
+.dark\:bg-neutralDarkTheme-very-dark-blue-bg:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: hsl(230 17% 14% / var(--tw-bg-opacity));
+}
+
+.dark\:bg-neutralDarkTheme-dark-desaturated-blue-card-bg:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: hsl(228 28% 20% / var(--tw-bg-opacity));
+}
+
+.dark\:text-neutralDarkTheme-desaturated-blue-text:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: hsl(228 34% 66% / var(--tw-text-opacity));
+}
+
+.dark\:text-neutralDarkTheme-white-text:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
