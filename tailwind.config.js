@@ -34,7 +34,7 @@ module.exports = {
         },
         extend: {
             fontFamily: {
-                Inter: ["Inter", "sans-serif"],
+                inter: ["Inter", "sans-serif"],
             },
             backgroundImage: {
                 instagram:
