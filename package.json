@@ -98,6 +98,8 @@
         "yaml": "^2.4.5"
     },
     "scripts": {
+        "build:css": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/styles.css --minify",
+        "build": "npm run build:css",
         "watch": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/styles.css --watch"
     },
     "keywords": [],
