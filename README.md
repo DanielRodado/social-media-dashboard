@@ -21,7 +21,7 @@ Los usuarios deben poder:
 
 ### Screenshot
 
-![](./public/dessing/Dashboard.png)
+![](./public/dessing/Dashboard-light.png)
 
 ![](./public/dessing/Dashboard-dark.png)
 
