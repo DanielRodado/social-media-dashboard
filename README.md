@@ -23,6 +23,8 @@ Los usuarios deben poder:
 
 ![](./public/dessing/Dashboard.png)
 
+![](./public/dessing/Dashboard-dark.png)
+
 ## Author
 
 - LinkedIn - [Daniel Rodado](https://www.linkedin.com/in/daniel-rodado-b24432210/)
