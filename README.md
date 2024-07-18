@@ -7,6 +7,7 @@ Esta es una solución al [Social media dashboard with theme switcher challenge o
 -   [Overview](#overview)
     -   [The challenge](#the-challenge)
     -   [Screenshot](#screenshot)
+    -   [Links](#links)
 -   [Author](#author)
 
 ## Overview
@@ -25,6 +26,19 @@ Los usuarios deben poder:
 
 ![](./public/dessing/Dashboard-dark.png)
 
+### Links
+
+- URL del sitio web: [Add live site URL here](https://your-live-site-url.com)
+
+### Construido con
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [Tailwind ](https://tailwindcss.com/) - CSS framework
+
 ## Author
 
-- LinkedIn - [Daniel Rodado](https://www.linkedin.com/in/daniel-rodado-b24432210/)
+-   LinkedIn - [Daniel Rodado](https://www.linkedin.com/in/daniel-rodado-b24432210/)
