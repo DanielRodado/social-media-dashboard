@@ -8,12 +8,16 @@ interface Props {
 }
 
 const { username, followers, followersChange, typeOfSocialNetwork, increase } = Astro.props;
+const classes = [
+    "absolute top-0 w-full h-2 rounded-t-md",
+    typeOfSocialNetwork !== "instagram" ? `bg-primary-${typeOfSocialNetwork}` : "bg-instagram"
+]
 ---
 
 <div class="relative bg-neutralLightTheme-light-grayish-blue-card-bg rounded-md flex flex-col items-center justify-center gap-5 p-6 hover:bg-neutralLightTheme-light-grayish-blue-card-hover-bg dark:bg-neutralDarkTheme-dark-desaturated-blue-card-bg dark:hover:bg-neutralDarkTheme-dark-desaturated-blue-card-hover-bg">
-    <div class="absolute top-0 bg-primary-facebook w-full h-2 rounded-t-md"></div>
+    <div class:list={classes}></div>
     <div class="flex gap-2">
-        <img src={`/public/assets/images/icon-${typeOfSocialNetwork}.svg`} alt="Facebook">
+        <img src={`/assets/images/icon-${typeOfSocialNetwork}.svg`} alt={typeOfSocialNetwork}>
         <p class="text-neutralLightTheme-dark-grayish-blue-text text-sm font-bold dark:text-neutralDarkTheme-desaturated-blue-text">{typeOfSocialNetwork === "youtube" ? "" : "@"}{username}</p>
     </div>
     <div class="text-center">
