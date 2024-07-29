@@ -7,7 +7,7 @@ import PageGrowthCard from '../components/PageGrowthCard.astro';
 ---
 
 <Layout title="Dashboard">
-	<section class="grid grid-cols-1 gap-7 lg:grid-cols-2 desktop:grid-cols-4 *:select-none *:cursor-pointer max-w-screen-desktop desktop:mx-auto">
+	<section class="grid grid-cols-1 gap-7 tablet:grid-cols-2 desktop:grid-cols-4 *:select-none *:cursor-pointer max-w-screen-desktop desktop:mx-auto">
 		<h2 class="hidden">Stats</h2>
 		{
 			userStats.map(({username, followers, typeOfSocialNetwork, followersChange, increase}) => (
