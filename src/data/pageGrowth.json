@@ -1,0 +1,58 @@
+[
+    {
+        "socialNetwork": "facebook",
+        "metricLabel": "Page Views",
+        "metricLabelTotal": 87,
+        "percentage": 3,
+        "increase": true
+    },
+    {
+        "socialNetwork": "facebook",
+        "metricLabel": "Likes",
+        "metricLabelTotal": 87,
+        "percentage": 2,
+        "increase": false
+    },
+    {
+        "socialNetwork": "instagram",
+        "metricLabel": "Likes",
+        "metricLabelTotal": 5462,
+        "percentage": 2257,
+        "increase": true
+    },
+    {
+        "socialNetwork": "instagram",
+        "metricLabel": "Profile Views",
+        "metricLabelTotal": "52k",
+        "percentage": 1375,
+        "increase": true
+    },
+    {
+        "socialNetwork": "twitter",
+        "metricLabel": "Retweets",
+        "metricLabelTotal": 117,
+        "percentage": 303,
+        "increase": true
+    },
+    {
+        "socialNetwork": "twitter",
+        "metricLabel": "Likes",
+        "metricLabelTotal": 507,
+        "percentage": 553,
+        "increase": true
+    },
+    {
+        "socialNetwork": "youtube",
+        "metricLabel": "Likes",
+        "metricLabelTotal": 107,
+        "percentage": 19,
+        "increase": false
+    },
+    {
+        "socialNetwork": "youtube",
+        "metricLabel": "Total Views",
+        "metricLabelTotal": 1407,
+        "percentage": 12,
+        "increase": false
+    }
+]

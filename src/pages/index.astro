@@ -1,11 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import userStats from "../data/userStats.json"
+import pageGrowth from "../data/pageGrowth.json"
 import UserStatsCard from '../components/UserStatsCard.astro';
+import PageGrowthCard from '../components/PageGrowthCard.astro';
 ---
 
 <Layout title="Dashboard">
-	<section class="grid grid-cols-1 gap-7 desktop:grid-cols-4 *:select-none *:cursor-pointer max-w-screen-desktop desktop:mx-auto">
+	<section class="grid grid-cols-1 gap-7 lg:grid-cols-2 desktop:grid-cols-4 *:select-none *:cursor-pointer max-w-screen-desktop desktop:mx-auto">
 		<h2 class="hidden">Stats</h2>
 		{
 			userStats.map(({username, followers, typeOfSocialNetwork, followersChange, increase}) => (
@@ -20,6 +22,18 @@ import UserStatsCard from '../components/UserStatsCard.astro';
 	</section>
 	<section class="mt-14 max-w-screen-desktop desktop:mx-auto">
 		<h2 class="text-2xl text-neutralLightTheme-dark-grayish-blue-text dark:text-neutralDarkTheme-white-text font-bold mb-8">Overview - Today</h2>
-		<div class="grid grid-cols-1 gap-7 tablet:grid-cols-2 desktop:grid-cols-4"></div>
+		<div class="grid grid-cols-1 gap-7 tablet:grid-cols-2 desktop:grid-cols-4">
+			{
+				pageGrowth.map(({socialNetwork, metricLabel, metricLabelTotal, percentage, increase}) => (
+					<PageGrowthCard 
+						socialNetwork={socialNetwork}
+						metricLabel={metricLabel}
+						metricLabelTotal={metricLabelTotal}
+						percentage={percentage}
+						increase={increase}
+						/>
+				))
+			}
+		</div>
 	</section>
 </Layout>

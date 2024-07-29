@@ -1,21 +1,22 @@
 ---
 interface Props {
     socialNetwork: string;
-    totalVisits: number;
+    metricLabel: string;
+    metricLabelTotal: number | string;
     percentage: number;
     increase: boolean;
 }
 
-const { socialNetwork, totalVisits, percentage, increase } = Astro.props;
+const { socialNetwork, metricLabel ,metricLabelTotal, percentage, increase } = Astro.props;
 ---
 
 <div class="flex flex-col gap-5 select-none cursor-pointer bg-neutralLightTheme-light-grayish-blue-card-bg hover:bg-neutralLightTheme-light-grayish-blue-card-hover-bg dark:bg-neutralDarkTheme-dark-desaturated-blue-card-bg py-6 px-8 rounded-md dark:hover:bg-neutralDarkTheme-dark-desaturated-blue-card-hover-bg">
     <div class="flex justify-between">
-        <p class="text-neutralLightTheme-dark-grayish-blue-text dark:text-neutralDarkTheme-desaturated-blue-text font-bold">{socialNetwork}</p>
-        <img src="./assets/images/icon-facebook.svg" alt="Facebook">
+        <p class="text-neutralLightTheme-dark-grayish-blue-text dark:text-neutralDarkTheme-desaturated-blue-text font-bold">{metricLabel}</p>
+        <img src={`/assets/images/icon-${socialNetwork}.svg`} alt={socialNetwork}>
     </div>
     <div class="flex justify-between items-center">
-        <p class="text-3xl font-bold dark:text-neutralDarkTheme-white-text">{totalVisits}</p>
+        <p class="text-3xl font-bold dark:text-neutralDarkTheme-white-text">{typeof metricLabelTotal === "number" ? metricLabelTotal.toLocaleString() : metricLabelTotal}</p>
         <p
             class:list={[
                 "font-bold",
