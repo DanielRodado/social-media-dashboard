@@ -1,6 +1,8 @@
 ---
+import Header from '../components/Header.astro';
+
 interface Props {
-	title: string;
+    title: string;
 }
 
 const { title } = Astro.props;
@@ -8,36 +10,35 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Astro description" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="shortcut icon" href="/favicon-32x32.png" type="image/x-icon">
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+    </head>
+    <body>
+        <div class="dark:bg-neutralDarkTheme-very-dark-blue-bg">
+            <Header />
+            <main class="relative -top-28 p-8 desktop:-top-36">
+                <slot />
+            </main>
+        </div>
+    </body>
 </html>
 <style is:global>
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
+    @font-face {
+        font-family: "Inter";
+        src: url(/public/assets/font/Inter-Regular.ttf) format("truetype");
+        font-weight: normal;
+        font-style: normal;
+    }
 
-	@font-face {
-    font-family: "Inter";
-    src: url(/public/assets/font/Inter-Regular.ttf) format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Inter";
-    src: url(/public/assets/font/Inter-Bold.ttf) format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
+    @font-face {
+        font-family: "Inter";
+        src: url(/public/assets/font/Inter-Bold.ttf) format("truetype");
+        font-weight: normal;
+        font-style: normal;
+    }
 </style>

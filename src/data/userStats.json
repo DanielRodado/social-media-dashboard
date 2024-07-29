@@ -1,0 +1,34 @@
+[
+    {
+        "username": "nathanf",
+        "typeOfSocialNetwork": "facebook",
+        "followers": 1987,
+        "typeFollowers": "followers",
+        "followersChange": 12,
+        "increase": true
+    },
+    {
+        "username": "nathanf",
+        "typeOfSocialNetwork": "twitter",
+        "followers": 1044,
+        "typeFollowers": "followers",
+        "followersChange": 99,
+        "increase": true
+    },
+    {
+        "username": "realnathanf",
+        "typeOfSocialNetwork": "instagram",
+        "followers": "11k",
+        "typeFollowers": "followers",
+        "followersChange": 1099,
+        "increase": true
+    },
+    {
+        "username": "Nathan F.",
+        "typeOfSocialNetwork": "youtube",
+        "followers": 8239,
+        "typeFollowers": "subscribers",
+        "followersChange": 144,
+        "increase": false
+    }
+]
